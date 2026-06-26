@@ -1,0 +1,106 @@
+/* Container principal */
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a; /* slate-950 */
+  padding: 20px;
+}
+
+/* Card */
+.login-card {
+  width: 100%;
+  max-width: 420px;
+  background: #1e293b; /* slate-900 */
+  padding: 32px;
+  border-radius: 16px;
+  border: 1px solid #334155; /* slate-800 */
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Titre */
+.login-title {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Sous-texte */
+.login-subtitle {
+  color: #94a3b8; /* slate-400 */
+  font-size: 0.9rem;
+  margin-bottom: 24px;
+}
+
+/* Label */
+.login-label {
+  color: #cbd5e1; /* slate-300 */
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  display: block;
+}
+
+/* Input */
+.login-input {
+  width: 100%;
+  background: #0f172a; /* slate-800 */
+  border: 1px solid #334155;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: 0.2s;
+}
+
+.login-input:focus {
+  border-color: #3b82f6; /* blue-500 */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(59,130,246,0.3);
+}
+
+/* Bouton */
+.login-btn {
+  width: 100%;
+  background: #2563eb; /* blue-600 */
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: 0.2s;
+  border: none;
+}
+
+.login-btn:hover {
+  background: #1d4ed8; /* blue-700 */
+  transform: scale(1.02);
+}
+
+/* Message d'erreur */
+.error-text {
+  color: #f87171; /* red-400 */
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablette */
+@media (min-width: 640px) {
+  .login-card {
+    padding: 40px;
+  }
+  .login-title {
+    font-size: 1.8rem;
+  }
+}
+
+/* Desktop large */
+@media (min-width: 1024px) {
+  .login-card {
+    max-width: 480px;
+  }
+}
