@@ -1,0 +1,117 @@
+/* ============================
+   SECTION: INFO EMPLOYÉ
+============================ */
+.employe-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.employe-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.employe-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.employe-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.employe-role {
+  font-size: 1rem;
+  color: gray;
+}
+
+.msg-button {
+  background-color: #1e88e5;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.msg-button:hover {
+  background-color: #1565c0;
+}
+
+/* ============================
+   SECTION: GRAPH
+============================ */
+.graph-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ============================
+   SECTION: MESSAGES
+============================ */
+.message-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.message-input {
+  width: 100%;
+  height: 120px;
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.send-button {
+  margin-top: 1rem;
+  background-color: #43a047;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 12px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.send-button:hover {
+  background-color: #2e7d32;
+}
+
+/* ============================
+   MEDIA QUERIES
+============================ */
+@media (max-width: 900px) {
+  .employe-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .employe-name {
+    font-size: 1.4rem;
+  }
+
+  .msg-button,
+  .send-button {
+    width: 100%;
+  }
+}

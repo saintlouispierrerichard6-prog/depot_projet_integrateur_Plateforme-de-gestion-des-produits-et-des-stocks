@@ -11,8 +11,8 @@ export default function Hero() {
         </p>
 
         <div className="hero-buttons">
-          <a href="/authentification" className="btn-primary">Connexion</a>
-          <a href="/about" className="btn-secondary">Commencer</a>
+          <a href="/login" className="btn-primary">Connexion</a>
+          <a href="/inscription" className="btn-secondary">Commencer</a>
         </div>
       </div>
     </section>
